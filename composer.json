@@ -1,0 +1,33 @@
+{
+    "name": "secretcv/laravel-meta",
+    "keywords": ["meta", "tags", "head", "laravel"],
+    "description": "A package to manage Header Meta Tags",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Burak Çakırel",
+            "email": "burak.cakirel@secretcv.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Secretcv\\LaravelMeta\\": "src/Secretcv/LaravelMeta/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Secretcv\\LaravelMeta\\MetaServiceProvider"
+            ],
+            "aliases": {
+                "Meta": "Secretcv\\LaravelMeta\\Facade"
+            }
+        }
+    }
+}
